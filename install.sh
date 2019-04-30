@@ -7,6 +7,12 @@ sudo apt install unzip
 wget https://chromedriver.storage.googleapis.com/<chromedriver version (ex. 2.31)>/chromedriver_linux64.zip 
 unzip chromedriver_linux64.zip -d ~/local/bin/
 
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo apt update 
+sudo apt -f install -y
+
 main(){
     #create virtual environment
     # 36: my virtual environmnet name
